@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class LibraryTest {
     @Test void abiFrom() {
         assertSame(AndroidAbi.from("x86_64"), AndroidAbi.X86_64);
-        assertSame(AndroidAbi.from("ARM64-V8a"), AndroidAbi.ARM_V8);
+        assertSame(AndroidAbi.from("ARM64-V8a"), AndroidAbi.ARM64_V8A);
         boolean failure = false;
         try {
             AndroidAbi.from("X862_64");

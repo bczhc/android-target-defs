@@ -1,8 +1,8 @@
 package pers.zhc.android.def;
 
 public enum AndroidAbi {
-    ARM_V7("armeabi-v7a"),
-    ARM_V8("arm64-v8a"),
+    ARMEABI_V7A("armeabi-v7a"),
+    ARM64_V8A("arm64-v8a"),
     X86("x86"),
     X86_64("x86_64");
 
@@ -20,9 +20,9 @@ public enum AndroidAbi {
     public static AndroidAbi from(String name) {
         switch (name.toLowerCase()) {
             case "armeabi-v7a":
-                return ARM_V7;
+                return ARMEABI_V7A;
             case "arm64-v8a":
-                return ARM_V8;
+                return ARM64_V8A;
             case "x86_64":
                 return X86_64;
             case "x86":
