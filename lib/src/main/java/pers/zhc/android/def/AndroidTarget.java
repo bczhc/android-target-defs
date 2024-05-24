@@ -27,4 +27,9 @@ public class AndroidTarget {
     public int hashCode() {
         return Objects.hash(abi, api);
     }
+
+    @Override
+    public String toString() {
+        return this.abi.name + "-" + this.api;
+    }
 }
