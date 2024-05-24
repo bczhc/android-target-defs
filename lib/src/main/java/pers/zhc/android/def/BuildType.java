@@ -15,7 +15,7 @@ public enum BuildType {
         return this.name;
     }
 
-    public BuildType from(String name) {
+    public static BuildType from(String name) {
         switch (name.toLowerCase()) {
             case "debug":
                 return Debug;
