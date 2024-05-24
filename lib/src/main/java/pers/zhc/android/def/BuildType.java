@@ -1,8 +1,8 @@
 package pers.zhc.android.def;
 
 public enum BuildType {
-    Debug("debug"),
-    Release("release");
+    DEBUG("debug"),
+    RELEASE("release");
 
     public final String name;
 
@@ -18,9 +18,9 @@ public enum BuildType {
     public static BuildType from(String name) {
         switch (name.toLowerCase()) {
             case "debug":
-                return Debug;
+                return DEBUG;
             case "release":
-                return Release;
+                return RELEASE;
             default:
                 throw new UnreachableError();
         }
